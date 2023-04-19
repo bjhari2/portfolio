@@ -1,0 +1,342 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -23%, 123%;
+    background-position-y: -22%, 163%;
+  }
+
+  .container.about-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -23%, 123%;
+    background-position-y: 66%, -59%;
+  }
+
+  .container.projects-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -23%, 123%;
+    background-position-y: -330%, 920%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -28%, 128%;
+    background-position-y: -14%, 136%;
+  }
+
+  .container.about-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -28%, 128%;
+    background-position-y: 90%, -125%;
+  }
+
+  .container.projects-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -28%, 128%;
+    background-position-y: -330%, 900%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -36.8%, 137%;
+    background-position-y: -12%, 130%;
+  }
+
+  .container.about-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -36.8%, 137%;
+    background-position-y: 110%, -190%;
+  }
+
+  .container.projects-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -36.8%, 137%;
+    background-position-y: -180%, 520%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%;
+    background-position-x: -49.6%, 150%;
+    background-position-y: -7%, 119%;
+  }
+
+  .container.about-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%;
+    background-position-x: -50%, 150%;
+    background-position-y: -120%, 400%;
+  }
+
+  .container.projects-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%;
+    background-position-x: -33.6%, 134%;
+    background-position-y: -24%, 158%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%;
+    background-position-x: -50%, 150%;
+    background-position-y: -3%, 109%;
+  }
+
+  .container.about-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%;
+    background-position-x: -50%, 150%;
+    background-position-y: -13%, 140%;
+  }
+
+  .container.projects-bg {
+    background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%;
+    background-position-x: -50%, 150%;
+    background-position-y: -13%, 130%;
+  }
+}
+
+a {
+  color: #2724d7;
+  text-decoration: none;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0px;
+}
+
+.image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.image img:hover {
+  transform: scale(1.04);
+}
+
+.socials a {
+  margin-right: 20px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+button {
+  width: 100px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+a.navbar-brand {
+  color: #3533a1;
+  font-size: 40px;
+  padding-left: 30px;
+  background-image: url(./assets/crown.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 65%;
+  background-size: 60%;
+  transition: transform 0.4s;
+}
+
+a.navbar-brand:hover {
+  transform: scale(1.1);
+  color: #3533a1;
+}
+
+h1 {
+  font-size: 80px;
+  color: #3533a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-container {
+  width: 200px;
+}
+
+.navbar-collapse {
+  justify-content: end;
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+a.nav-link {
+  color: #3533a1;
+  transition: transform 0.4s;
+  padding: 10px;
+}
+
+a.nav-link:hover {
+  transform: scale(1.1);
+  background-color: #3533a1;
+  color: aliceblue;
+  border-radius: 20px 3px;
+}
+
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link.show:hover {
+  background-color: #3533a1;
+  color: aliceblue;
+}
+
+.text {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  color: #3533a1;
+}
+
+.tech-stack {
+  margin-top: 40px;
+}
+
+.tech-stack img {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 25px 25px;
+}
+
+.tech-stack p {
+  font-size: 25px;
+}
+
+.horizontal-line {
+  width: 70%;
+  height: 1px;
+  background-color: #3533a1;
+  border: 0.5px solid #3533a1;
+}
+
+/* .row>div.inner-content {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+.fa-brands,
+.fa-regular {
+  margin: 0px 5px;
+}
+
+.projects-bg .horizontal-line {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 40%;
+  border-radius: 30px 3px;
+  box-shadow: 0 0 5px rgb(174, 174, 174);
+}
+
+.card h2 {
+  font-size: 25px;
+  color: black;
+  text-align: left;
+  padding: 15px 15px 2px 15px;
+}
+
+.card p {
+  font-size: 20px;
+  text-align: left;
+  padding: 2px 15px 7px 15px;
+}
+
+.container.projects-bg {
+  padding-top: 10px;
+}
+
+.row {
+  gap: 50px;
+}
+
+.row .right .image {
+  float: right;
+}
+
+.row .left .text {
+  width: 700px;
+}
+
+.content>.horizontal-line {
+  width: auto;
+}
+
+.content>.text {
+  margin-top: 30px;
+}
+
+footer {
+  height: auto;
+  text-align: center;
+  color: #3533a1;
+  background-color: aliceblue;
+  font-size: small;
+}
+
+footer .socials {
+  padding: 20px 0;
+}
+
+footer h2 {
+  font-size: xx-large;
+}
