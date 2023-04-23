@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .container {
     background-image: url(./assets/design-thingy.png), url(./assets/design-thingy.png);
     background-repeat: no-repeat, no-repeat;
@@ -129,6 +129,10 @@
     background-size: 50%;
     background-position-x: -50%, 150%;
     background-position-y: -13%, 130%;
+  }
+
+  .row h1 {
+    font-size: 65px;
   }
 }
 
@@ -309,12 +313,12 @@ h2 {
   gap: 50px;
 }
 
-.row .right .image {
+.row .col .image {
   float: right;
 }
 
-.row .left .text {
-  width: 700px;
+.row .col .text {
+  width: 50vw;
 }
 
 .content>.horizontal-line {
